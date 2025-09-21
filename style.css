@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #87CEFA, #FFA500);
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    color: #1E3A8A;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:nth-child(2) { background-color: #FF4500; } /* Reset */
+button:nth-child(1) { background-color: #1E90FF; } /* Mark Present */
+button:nth-child(3) { background-color: #20B2AA; } /* Summary */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    margin: 5px 0;
+    padding: 5px 10px;
+    background-color: #E0E7FF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deleteBtn {
+    background-color: #FF6347;
+    border: none;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
