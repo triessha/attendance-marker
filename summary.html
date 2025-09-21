@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Summary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance Summary</h1>
+        <ul id="summaryList"></ul>
+        <button onclick="goBack()">Back to Attendance</button>
+    </div>
+
+    <script>
+        let attendees = JSON.parse(localStorage.getItem("attendees")) || [];
+
+        const list = document.getElementById('summaryList');
+        if(attendees.length === 0) {
+            list.innerHTML = "<li>No students marked present yet.</li>";
+        } else {
+            attendees.forEach((attendee, index) => {
+                const li = document.createElement('li');
+                li.textContent = `${index + 1}. ${attendee}`;
+                list.appendChild(li);
+            });
+        }
+
+        function goBack() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
