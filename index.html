@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Attendance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Class Attendance</h1>
+        <input type="text" id="nameInput" placeholder="Enter student name">
+        <button onclick="markAttendance()">Mark Present</button>
+        <button onclick="resetAttendance()">Reset All</button>
+        <button onclick="goToSummary()">View Summary</button>
+
+        <h2>Attendees:</h2>
+        <ul id="attendeeList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
